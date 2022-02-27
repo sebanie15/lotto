@@ -59,7 +59,12 @@ class Lotto:
         self.__number_of_numbers_drawn = n
 
     @property
-    def statistics(self):
+    def statistics(self) -> dict:
+        """_summary_
+
+        Returns:
+            dict: A dictionary that returns sets of drawed numbers
+        """
         return self.__statistics
 
     def draw(self) -> list:
@@ -151,6 +156,11 @@ class Lotto:
 
     @property
     def hits(self) -> dict:
+        """A method that returns the number of times sets of numbers have been hit
+
+        Returns:
+            dict: A dictionary that returns sets of hit numbers
+        """
         return self.__hits
         
 
